@@ -13,13 +13,26 @@ app.get("/usuario", (request, response) => {
 })
 
 app.get("/pokemon", (request, response) => {
-    response.json({ message: "charmander" })
+    response.json({ message: "charmander", query: request.query })
+})
+
+app.get("/pokemon/:id", (request, response) => {
+    const id = request.params.id
+    const pokemons = ["pikachu", "charmander", "squirtle"]
+
+    response.json({ message: pokemons[id], query: request.query })
 })
 
 app.post("/pokemon", (request, response) => {
-    const body = request.body
+    const body = request.body // receber atraves do request.body
     console.log(body)
-    response.json({ message: "foi adicionado um novo pokemon" })
+    response.json({
+        user: {
+            name: body.name,
+            email: body.email,
+            password: body.password
+        }
+    })
 })
 
 app.listen(3030, () => {
