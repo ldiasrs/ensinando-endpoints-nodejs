@@ -53,7 +53,9 @@ app.post("/confirmar", (request, response) => {
             .json({ mensagem: "O campo nome não foi preenchido"})
     }
     pessoasConfirmadas.push(request.body.nome)
-    return response.json({ nomes: pessoasConfirmadas })
+    return response
+            .status(HttpStatus.CREATED)
+            .json({ nomes: pessoasConfirmadas })
 })
 
 
