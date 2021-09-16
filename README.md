@@ -40,13 +40,11 @@ BODY: NAO SE USA BODY
 
 # Exercicio proposto
 
-1) Edite a ação /pessoasconfirmadas para que ela retorne explicidamente o status HttpStatus.OK
+1) Edite a ação ```/pessoasconfirmadas``` para que ela retorne explicidamente o status ```HttpStatus.OK```
 
-2) Edite a ação /confirmarvalidando e coloque uma validação a mais que verifica se a pessoa já esta confirmada na lista, caso esteja retorne uma mensagem "Pessoa já confirmada" com status: 208 (Already Reported = Já enviado)
+2) Edite a ação ```/confirmarvalidando``` e coloque uma validação a mais que verifica se a pessoa já esta confirmada na lista, caso esteja retorne uma mensagem "Pessoa já confirmada" com status: ```208``` (Already Reported = Já enviado)
 
-3) Crie uma nova ação chamada /removerconfirmacao que recebe um body:  ```{"nome":"<NOME PESSOA>"``` com o método: DELETE. Essa ação deve remover a pessoa da lista caso exista e retornar a lista de pessoas confirmadas. Caso não exista deve retonar uma mensagem com o body body:  ```{"mensagem":"Pessoa não encontrada"``` e com status: NOT_FOUND=404
-
-4) Crie uma nova ação chamada /removerconfirmacao que recebe um body:  ```{"nome":"<NOME PESSOA>"``` com o método: DELETE. Essa ação deve remover a pessoa da lista caso exista e retornar a lista de pessoas confirmadas
+3) Crie uma nova ação chamada ```/removerconfirmacao``` que recebe um body:  ```{"nome":"<NOME PESSOA>"``` com o método: DELETE. Essa ação deve remover a pessoa da lista caso exista e retornar a lista de pessoas confirmadas. Caso não exista deve retonar uma mensagem com o body body:  ```{"mensagem":"Pessoa não encontrada"``` e com status: ```NOT_FOUND=404```
 
 # Reverlar respostas
 
