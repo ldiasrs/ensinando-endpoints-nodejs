@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon api-festa-aniversario.js"
+    "start": "nodemon api-festa-aniversario.js",
+    "mostrar-respostas" : "node revelar-respostas.js \"TENTEI-RESPONDER-ANTES\"",
+    "encrypt" : "node revelar-respostas.js \"TENTEI-RESPONDER-ANTES\" encrypt"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {
+    "crypto-js": "^4.1.1",
     "express": "^4.17.1"
   }
 }
