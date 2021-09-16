@@ -38,7 +38,7 @@ METODO: GET
 BODY: NAO SE USA BODY
 ```
 
-## 4 - Exercicio proposto
+# Exercicio proposto
 
 1) Edite a ação /pessoasconfirmadas para que ela retorne explicidamente o status HttpStatus.OK
 
@@ -48,5 +48,12 @@ BODY: NAO SE USA BODY
 
 4) Crie uma nova ação chamada /removerconfirmacao que recebe um body:  ```{"nome":"<NOME PESSOA>"``` com o método: DELETE. Essa ação deve remover a pessoa da lista caso exista e retornar a lista de pessoas confirmadas
 
+# Reverlar respostas
 
+Para você que pesquisou, conversou e tentou fazer o exercicio então você pode revelar as respostas e comparar com a sua solução
 
+```bash
+npm run mostrar-respostas
+```
+
+Ver respostas no aquivo ./respostas.js
